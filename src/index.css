@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,181 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cont{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.history{
+  width: 20%;
+  background-color: #202123;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.history > *{
+  margin: 0px auto;
+  width: 90% !important;
+}
+
+.history-comp{
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.his-comp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.his-comp>h5{
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.head > h2{
+  font-size: 32px;
+  font-weight: 400;
+  margin: 15px;
+}
+
+.history > div >button{
+  background-color: #202123;
+  border: 1px solid #AEAEAE;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.history > div >button:hover{
+  background-color: white;
+  color: black;
+}
+
+.main-cont{
+  width: 80%;
+  height: 100%;
+  background-color: #353640;
+}
+
+.container{
+  width: 60%;
+  margin: 0px auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.container>h2{
+  font-size: 40px;
+  font-weight: 600;
+  margin: 15px;
+}
+
+.container>p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 400px;
+  margin: 0%;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #40414F;
+  color: #7F7F91;
+  width: 640px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.search > input{
+  background-color: #40414F;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  width: 90%;
+}
+
+.results{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 25px;
+  width: 70%;
+}
+
+.result-comp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  border-radius: 12px;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.result-comp > .content > h4{
+  margin: 0%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.result-comp > .content > p{
+  margin: 0%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #AEAEAE;
+}
+
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+
+.btns > *{
+  width: 90%;
 }
